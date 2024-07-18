@@ -163,7 +163,7 @@ const QuizeApp = () => {
       ) : (
         <div className="bg-gray-100 p-6 rounded-md shadow-md">
           <h2 className="text-2xl mb-4">Quiz Complete</h2>
-          <p className="text-lg font-medium mb-4">Your Score: {score}</p>
+          <p className="text-lg font-medium mb-4">Your Score: {score}/{shuffledQuestions?.length}</p>
           <button
             onClick={handleReset}
             className="p-4 bg-blue-500 text-white rounded-md hover:bg-blue-600"
@@ -175,13 +175,13 @@ const QuizeApp = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-gray-200">
-                  <th className="py-2 px-4 text-left" style={{ width: "30%" }}>
+                  <th className="py-2 px-4 text-center" style={{ width: "30%" }}>
                     Question
                   </th>
-                  <th className="py-2 px-4 text-left" style={{ width: "30%" }}>
+                  <th className="py-2 px-4 text-center" style={{ width: "30%" }}>
                     Your Answer
                   </th>
-                  <th className="py-2 px-4 text-left" style={{ width: "30%" }}>
+                  <th className="py-2 px-4 text-center" style={{ width: "30%" }}>
                     Correct Answer
                   </th>
                 </tr>
